@@ -1,8 +1,7 @@
 class Vehicle {
-    constructor(make, model, color, price, vin, year) {
+    constructor(make, model, price, vin, year) {
         this.make = make;
         this.model = model;
-        this.color = undefined;
         this.price = price;
         this.vin = vin;
         this.year = year;
