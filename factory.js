@@ -2,22 +2,22 @@ class Factory{
     constructor(location, owner) {
         this.location = location;
         this.owner = owner;
-        this.vehicles = []
+        this.vehicles = [];
 
     }
     createVehicle(vehicle) {
         this.vehicles.push(vehicle)
     }
-    listVehicles() {
-        return this.vehicles
-    }
     paintVehicle(vin, paintColor) {
         let vIndex = this.vehicles.findIndex(v => v.vin === vin)
         this.vehicles[vIndex].paint(paintColor)
     }
+        listVehicles() {
+        return this.vehicles
+    }
 }
 
-let factory = new Factory("Toyota", "Andrew Burr", undefined, undefined, undefined)
+/*let factory = new Factory("Toyota", "Andrew Burr", undefined, undefined, undefined)
 factory.createVehicle("Toyota Highlander")
 factory.listVehicles()
-factory.paintVehicle("1234", "white")
+factory.paintVehicle("1234", "white")*/

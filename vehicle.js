@@ -17,3 +17,5 @@ class Vehicle {
 let ford = new Vehicle("Ford", "F-150", undefined, 19000, 1234, 2015)
 Vehicle.drive()
 Vehicle.paint("blue")
+//look over panompto video for help
+//how to open html sites: https://stackoverflow.com/questions/74452866/how-preview-a-html-file-github-codespaces
