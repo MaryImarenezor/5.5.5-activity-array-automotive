@@ -1,21 +1,19 @@
 class Factory{
-    constructor(location, owner, vehicle, vin, paintColor) {
+    constructor(location, owner) {
         this.location = location;
         this.owner = owner;
-        this.vehicle = undefined;
-        this.vin = undefined;
-        this.paintColor = undefined;
+        this.vehicles = []
 
     }
     createVehicle(vehicle) {
-        this.vehicle = vehicle
+        this.vehicles.push(vehicle)
     }
     listVehicles() {
-        return this.vehicle
+        return this.vehicles
     }
     paintVehicle(vin, paintColor) {
-        this.vin = vin;
-        this.paintColor = paintColor;
+        let vIndex = this.vehicles.findIndex(v => v.vin === vin)
+        this.vehicles[vIndex].paint(paintColor)
     }
 }
 
